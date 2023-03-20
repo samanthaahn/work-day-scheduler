@@ -3,6 +3,8 @@
 // in the html.
 
 var timeDisplayEl = $('#currentDay');
+var saveButtons = $('.btn');
+
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
@@ -12,6 +14,20 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+  saveButtons.on('click', function(event) {
+  var todo =  $(this).siblings('textarea').val()
+  var hour = $(this).siblings('.hour').text()
+
+  console.log($(this).siblings('textarea').val())
+  console.log($(this).siblings('.hour').text())
+
+  localStorage.setItem(hour, todo)
+
+});
+
+$('#hour-9 > textarea').val(localStorage.getItem('9AM'))
+
+
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -24,10 +40,14 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
   
-  function displayTime() {
-    var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
-    timeDisplayEl.text(rightNow);
-  }
-});
 
 displayTime();
+
+});
+
+function displayTime() {
+  var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
+  timeDisplayEl.text(rightNow);
+}
+
+
