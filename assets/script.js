@@ -27,21 +27,6 @@ $('#hour-4 > textarea').val(localStorage.getItem('4PM'));
 $('#hour-5 > textarea').val(localStorage.getItem('5PM'));
 
 
-
-
-
-displayTime();
-
-});
-
-function displayTime() {
-  var rightNow = dayjs().format('dddd, MMMM YYYY');
-  timeDisplayEl.text(rightNow);
-}
-
-
-
-
 $('.time-block').each(function() { 
   
   var hour = parseInt($(this).attr('id').split('-')[1]);
@@ -55,3 +40,13 @@ $('.time-block').each(function() {
   }
   
   })
+
+
+displayTime();
+
+});
+
+function displayTime() {
+  var rightNow = dayjs().format('dddd, MMMM YYYY');
+  timeDisplayEl.text(rightNow);
+}
