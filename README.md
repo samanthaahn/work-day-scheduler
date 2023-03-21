@@ -3,11 +3,11 @@
 
 
 ## Description
-This is a short coding quiz that tests your knowledge on the basics of html, css, and javascript. There are 5 questions that will test you on what you know. Your high score will be the time you finish your quiz, and each time you get a question wrong, 10 seconds will be deducted. You are also able to view all the highscores! 
+
 
 ## Deploy link
 
-https://samanthaahn.github.io/code-quiz/
+
 
 ## Installation
 
