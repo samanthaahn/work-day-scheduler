@@ -6,7 +6,7 @@ This is a day planner that will help you keep track of your todos. Write what yo
 
 ## Deploy link
 
-
+https://samanthaahn.github.io/work-day-scheduler/
 
 ## Installation
 
