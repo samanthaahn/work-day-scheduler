@@ -53,7 +53,7 @@ displayTime();
 });
 
 function displayTime() {
-  var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
+  var rightNow = dayjs().format('dddd, MMMM YYYY');
   timeDisplayEl.text(rightNow);
 }
 
