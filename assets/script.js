@@ -37,7 +37,8 @@ $('#hour-5 > textarea').val(localStorage.getItem('5PM'));
 $('.time-block').each(function() { 
   
   var hour = parseInt($(this).attr('id').split('-')[1]);
-  
+  console.log(hour);
+  console.log(currentHour);
   if (hour < currentHour) {
     $(this).addClass('past');
   } else if (hour > currentHour) {

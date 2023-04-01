@@ -18,7 +18,9 @@ When you start on the day scheduler, you can write in the time slot what you nee
 
 ![alt text](./assets/images/Screenshot%202023-03-20%20at%2010.10.33%20PM.png)
 
-![alt text](./assets/images/Screenshot%202023-03-20%20at%2010.11.39%20PM.png)
+![alt text](./assets/images/Screenshot%202023-03-31%20at%206.24.26%20PM.png)
+
+![alt text](./assets/images/Screenshot%202023-03-31%20at%206.24.51%20PM.png)
 
 
 
